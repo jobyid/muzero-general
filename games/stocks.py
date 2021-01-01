@@ -216,13 +216,30 @@ class Game(AbstractGame):
         return f"Play column {action_number + 1}"
 
 class Stocks:
+
     def __init__(self):
         self.player = 1
-
+    def stockList(self):
+        print("stocks")
+        epics = []
+        return epics
     def to_play(self):
         return 1
+    def get_observation(self):
+        print('Observations')
 
+    def step(self):
+        print("Review rewards, then move to moves")
 
+    def legal_actions(self):
+        legal = []
+        return legal
+
+    def have_winner(self):
+        print('Winner')
+
+    def take_action(self):
+        print("Make the move")
 
 class Connect4:
     def __init__(self):
